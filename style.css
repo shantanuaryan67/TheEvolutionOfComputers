@@ -46,6 +46,9 @@ nav>a {
   display: inline-block;
   margin: 1vh;
 }
+nav>a:hover{
+  color: #f1c40f;
+}
 i {
   font-size: 4vh;
   color: inherit;
@@ -53,6 +56,8 @@ i {
 section {
   background-color: inherit;
   color: inherit;
-  width: 50vw;
   text-align: justify;
+}
+.spacer {
+  height: 6vh;
 }
