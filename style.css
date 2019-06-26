@@ -17,6 +17,9 @@ header, .vid-container {
   width: 100vw;
   height: 100vh;
 }
+vid-container {
+  position: relative;
+}
 #coverVid {
   position: fixed;
   top: 50%;
@@ -27,6 +30,14 @@ header, .vid-container {
   width: auto;
   height: auto;
   transform: translate(-50%, -50%);
+}
+.title {
+  position: relative;
+  bottom: 50vh;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-50%);
+    font-family: 'Press Start 2P', cursive;
 }
 nav {
     margin: 0 auto;
@@ -54,10 +65,11 @@ nav>a>i {
   color: inherit;
 }
 section {
-  color: inherit;
+  color: #f1c40f;
   z-index: 90;
 }
 section>h3 {
+  font-family: 'Press Start 2P', cursive;
   position: relative;
   margin: auto auto;
   text-align: center;
@@ -67,6 +79,7 @@ section>h3 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   height: auto;
   width: 100vw;
   z-index: 90;
@@ -84,16 +97,17 @@ section>h3::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(255,255,255,0) 20%, rgba(44,62,80,0.8) 30%, rgba(44,62,80,0.8) 70%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 20%, rgba(22, 160, 133, 0.8) 30%, rgba(22, 160, 133, 0.8) 70%, rgba(255,255,255,0) 80%);
   z-index: -1;
 }
 .spacer {
   height: 5.95vh;
 }
 .text {
-  background-color: #000000;
+  background-color: #16a085;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   width: 100vw;
   padding: 20vh 10vh;
@@ -108,9 +122,6 @@ section>h3::after {
   padding-right: 50vw;
   text-align: right;
   background-position: right center;
-}
-.text h4{
-  text-transform: uppercase;
 }
 .text * {
   z-index: 100;
@@ -144,6 +155,14 @@ section>h3::after {
 }
 .text:nth-of-type(odd)::after {background-image: linear-gradient(90deg, rgba(44, 62, 80, 0.5) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, rgba(44, 62, 80, 0.7) 50%, rgba(44, 62, 80,1.0) 100%);}
 .text:nth-of-type(even)::after {background-image: linear-gradient(-90deg, rgba(44, 62, 80, 0.5) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, rgba(44, 62, 80, 0.7) 50%, rgba(44, 62, 80,1.0) 100%);}
+.text>h4 {
+  text-transform: uppercase;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+.text>p {
+  color: #ecf0f1;
+  font-family: 'Roboto Mono', monospace;
+}
 footer {
 padding: 10vw;
 text-align: center;
