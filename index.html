@@ -18,12 +18,12 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&effect=anaglyph|Roboto+Mono|Exo:800&display=swap" rel="stylesheet">
 
     <base href="/TheEvolutionOfComputers/">
-    <!--base href="/"-->
 
     <title>Computers, EVOLVE !!</title>
 
   </head>
   <body>
+
     <header>
       <div class="vid-container">
         <video autoplay muted loop id="coverVid">
@@ -32,14 +32,17 @@
         </video>
       </div>
       <h1 class="title font-effect-anaglyph">The Evolution Of Computers</h1>
+      <section id="top"></section>
     </header>
     <nav>
-      <a href="#gen1"><i class="far fa-dice-one"></i></a>
-      <a href="#gen2"><i class="far fa-dice-two"></i></a>
-      <a href="#gen3"><i class="far fa-dice-three"></i></a>
-      <a href="#gen4"><i class="far fa-dice-four"></i></a>
-      <a href="#gen5"><i class="far fa-dice-five"></i></a>
-      <a href="#gen6"><i class="far fa-dice-six"></i></a>
+      <a href="#top" class=""><i class="fas fa-angle-double-up"></i></a>
+      <a href="#gen1" class=""><i class="far fa-dice-one"></i></a>
+      <a href="#gen2" class=""><i class="far fa-dice-two"></i></a>
+      <a href="#gen3" class=""><i class="far fa-dice-three"></i></a>
+      <a href="#gen4" class=""><i class="far fa-dice-four"></i></a>
+      <a href="#gen5" class=""><i class="far fa-dice-five"></i></a>
+      <a href="#gen6" class=""><i class="far fa-dice-six"></i></a>
+      <a href="#bottom" class=""><i class="fas fa-angle-double-down"></i></a>
     </nav>
     <section id="gen1">
       <h3>The First Generation</h3>
@@ -151,8 +154,11 @@
       <p>The Evolution Of Computers</p>
       <p>Website made by Aryan</p>
       <p>&copy 2019</p>
+      <section id="bottom"></section>
     </footer>
-    <div class="spacer"></div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="script.js"></script>
 
   </body>
 </html>
