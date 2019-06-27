@@ -18,14 +18,10 @@ body {
 }
 header {
   position: relative;
-  padding: 5vw;
 }
 header, .vid-container {
   width: 100vw;
   height: 100vh;
-}
-vid-container {
-  position: relative;
 }
 #coverVid {
   position: fixed;
@@ -41,10 +37,14 @@ vid-container {
 .title {
   position: relative;
   bottom: 50vh;
-  margin: 0 auto;
+  width: 100vw;
   text-align: center;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+}
+.font-effect-anaglyph {
+    text-shadow: -0.06em 0 #2c2, 0.06em 0 #c2c;
 }
 #top {
   position: absolute;
