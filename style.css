@@ -18,6 +18,7 @@ body {
 }
 header {
   position: relative;
+  z-index: 50;
 }
 header, .vid-container {
   width: 100vw;
@@ -38,10 +39,11 @@ header, .vid-container {
   position: relative;
   bottom: 50vh;
   width: 100vw;
+  padding: 15vw;
   text-align: center;
   transform: translateY(-50%);
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
+  font-size: 7vw;
 }
 .font-effect-anaglyph {
     text-shadow: -0.06em 0 #2c2, 0.06em 0 #c2c;
@@ -53,6 +55,7 @@ header, .vid-container {
   bottom: -5.95vh;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 nav {
     margin: 0 auto;
@@ -94,6 +97,7 @@ section>h3 {
   margin: auto auto;
   text-align: center;
   font-size: 5vw;
+  text-shadow: -0.06em 0 #ecf0f1, 0.06em 0 #2c3e50;
   padding: 15vw;
   background-color: #16a085;
   background-repeat: no-repeat;
@@ -141,7 +145,7 @@ section>h3 {
 .text.i4 {background-image: url(resources/hg4.jpg);}
 .text.i5 {background-image: url(resources/hg5.jpg);}
 .text.i6 {background-image: url(resources/hg6.jpg);}
-.text.i7 {background-image: url(resources/bg1.png);}
+.text.i7 {background-image: url(resources/q1.jpg);}
 .text.i8 {background-image: url(resources/bg1.png);}
 .text.i9 {background-image: url(resources/bg1.png);}
 .text.i10 {background-image: url(resources/bg1.png);}
@@ -180,10 +184,12 @@ footer {
   width: 100vw;
   background-color: #f1c40f;
   color: #2c3e50;
+  z-index: 50;
 }
 footer i {
   font-size: 4vh;
   margin: 0 10px;
+  z-index: inherit;
 }
 hr {
   margin: 10px auto;
@@ -195,9 +201,10 @@ hr {
 }
 #bottom {
   position: absolute;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(0,0,255,0);
   top: -5.95vh;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
