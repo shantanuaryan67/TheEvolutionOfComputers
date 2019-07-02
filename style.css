@@ -61,7 +61,7 @@ header, .vid-container {
 nav {
     margin: 0 auto;
     position: sticky;
-    top: calc(98vh - 6vmin);
+    top: calc(98vh - 6vmin - 0.1vh);
     text-align: center;
     width: 100vw;
     background-color: #2c3e50;
