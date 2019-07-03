@@ -57,13 +57,12 @@ header, .vid-container {
   bottom: calc(-1 * calc(2vh + 6vmin));
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 nav {
     margin: 0 auto;
     position: sticky;
-    position: -webkit-sticky;
-    top: calc(98vh - 6vmin - 0.05vh);
+    top: calc(98vh - 6vmin);
     text-align: center;
     width: 100vw;
     background-color: #2c3e50;
@@ -105,9 +104,9 @@ section>h3 {
   margin: 0 auto;
   text-align: center;
   font-size: 6vmin;
-  text-shadow: -0.03em 0 #ecf0f1, 0.02em 0 #2c3e50;
+  text-shadow: -0.12rem 0 #ecf0f1, 0.08rem 0 #2c3e50;
   padding: 5vmin;
-  background-color: #16a085;
+  background-color: #2c3e50;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -115,7 +114,7 @@ section>h3 {
   background-blend-mode: soft-light;
   z-index: 190;
 }
-#gen1>h3 {background-image: url(resources/hg1.jpg);}
+#gen1>h3 {background-image: url(resources/hg1.png);}
 #gen2>h3 {background-image: url(resources/hg2.jpg);}
 #gen3>h3 {background-image: url(resources/hg3.jpg);}
 #gen4>h3 {background-image: url(resources/hg4.jpg);}
@@ -135,12 +134,12 @@ section>h3 {
 .text:nth-of-type(odd) {
   padding-left: 50vw;
   text-align: left;
-  background-position: left center;
+  background-position: right center;
 }
 .text:nth-of-type(even) {
   padding-right: 50vw;
   text-align: right;
-  background-position: right center;
+  background-position: left center;
 }
 .text * {
   z-index: 100;
@@ -212,9 +211,4 @@ hr {
   left: 0;
   right: 0;
   z-index: -1;
-}
-.spacer {
-  width: 100vw;
-  height: calc(2vh + 6vmin);
-  background-color: #2c3e50;
 }
