@@ -62,6 +62,7 @@ body {
 
 /* Place the container to the left */
 .container:nth-of-type(odd) {
+  text-align: right;
   left: 0;
 }
 
@@ -102,9 +103,8 @@ body {
 
 /* The actual content */
 .content {
-  text-align: justify;
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--customcolor);
   position: relative;
   border-radius: 6px;
   z-index: 1;
@@ -127,18 +127,12 @@ img {
 }
 
 .content:hover {
-  background-color: var(--customcolor);
   color: black;
 }
 
 .content:hover>img {
   mix-blend-mode: screen;
-  opacity: 0.8;
-}
-
-.content:hover>.text {
-  mix-blend-mode: normal;
-  color: black;
+  opacity: 0.3;
 }
 
 .year {
@@ -165,6 +159,7 @@ img {
 
   /* Full-width containers */
   .container:nth-of-type(n) {
+    text-align: left;
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
@@ -194,6 +189,26 @@ img {
   /* Make all right containers behave like the left ones */
   .container:nth-of-type(even) {
     left: 0%;
+  }
+
+  .content {
+    transition: 200ms;
+    background-color: var(--customcolor);
+    color: black;
+  }
+
+  .content>img {
+    mix-blend-mode: screen;
+    opacity: 0.3;
+  }
+
+  .content:hover {
+    color: transparent;
+  }
+
+  .content:hover>img {
+    mix-blend-mode: normal;
+    opacity: 1;
   }
 }
 
