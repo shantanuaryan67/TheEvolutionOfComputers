@@ -14,8 +14,9 @@
     <link rel="icon" sizes="192x192" href="resources/icon.png">
     <link rel="stylesheet" href="style_new.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.9.0/css/pro.min.css">
+    <!-- <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.9.0/css/pro.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Exo:600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="screen and (min-width: 768px)">
 
     <!-- <base href="/TheEvolutionOfComputers/"> -->
 
@@ -26,12 +27,8 @@
 
     <header><h1>The Evolution of Computers</h1></header>
 
-    <?php
-      echo "Hello World";
-    ?>
-
     <section class="timeline">
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">-2500</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/RomanAbacusRecon.jpg" alt="abacus" class="image">
@@ -41,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1642</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Pascaline-CnAM_823-1-IMG_1506-black.jpg" alt="Pascaline" class="image">
@@ -51,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1672</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Leibniz_Stepped_Reckoner_mechanism.png" alt="Stepped Reckoner" class="image">
@@ -61,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1804</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Jacquard.loom.cards.jpg" alt="jacquard loom" class="image">
@@ -71,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1822</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/LondonScienceMuseumsReplicaDifferenceEngine.jpg" alt="difference engine" class="image">
@@ -81,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1833</div>
         <div class="content">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Analytical_Engine_%282290032530%29.jpg" alt="Analytical Engine" class="image">
@@ -91,7 +88,119 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
+        <div class="year">1884</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/EarlyComptometerKeyboard.png" alt="Comptometer" class="image">
+          <div class="text">
+            <h2>Comptometer</h2>
+            <p>first commercially successful key-driven mechanical calculator.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1930</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Harmonic_analyser_disc_and_sphere.jpg" alt="differential analyser" class="image">
+          <div class="text">
+            <h2>differential analyser</h2>
+            <p>A mechanical analogue computer designed to solve differential equations by integration, using wheel-and-disc mechanisms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1938</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Zuse_Z1-2.jpg" alt="Z1" class="image">
+          <div class="text">
+            <h2>Z1</h2>
+            <p>first mechanical binary programmable computer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1940</div>
+        <div class="content">
+          <img src="https://picsum.photos/500" alt="Z2" class="image">
+          <div class="text">
+            <h2>Z2</h2>
+            <p>Used the same mechanical memory as Z1 but replaced the arithmetic and control logic with electrical relay circuits.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1941</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Z3_Deutsches_Museum.JPG" alt="Z3" class="image">
+          <div class="text">
+            <h2>Z3</h2>
+            <p>World's first working programmable, fully automatic digital computer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1942</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Atanasoff-Berry_Computer_at_Durhum_Center.jpg" alt="Atanasoff–Berry computer" class="image">
+          <div class="text">
+            <h2>Atanasoff–Berry computer</h2>
+            <p>First automatic electronic digital computer designed only to solve systems of linear equations; first machine to calculate using vacuum tubes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1943</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Colossus.jpg" alt="Colossus" class="image">
+          <div class="text">
+            <h2>Colossus</h2>
+            <p>Used thermionic valves to perform Boolean and counting operations; regarded as the world's first programmable, electronic, digital computer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1944</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Harvard_Mark_I_Computer_-_Left_Segment.jpg" alt="Harvard Mark I" class="image">
+          <div class="text">
+            <h2>Harvard Mark I</h2>
+            <p>General purpose electromechanical computer; became the second program-controlled machine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1945</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Zuse-Z4-Totale_deutsches-museum.jpg" alt="Z4" class="image">
+          <div class="text">
+            <h2>Z4</h2>
+            <p>World's first commercial digital computer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1946</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/ENIAC_Penn1.jpg" alt="ENIAC" class="image">
+          <div class="text">
+            <h2>ENIAC</h2>
+            <p>First electronic general-purpose computer. It was Turing-complete, digital and able to solve "a large class of numerical problems" through reprogramming.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1949</div>
+        <div class="content">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/EDSAC_%2819%29.jpg" alt="EDSAC" class="image">
+          <div class="text">
+            <h2>EDSAC</h2>
+            <p>First stored program executed on the EDSAC computer, which used paper tape input–output. also the first complete, fully functional von Neumann architecture computer.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -101,7 +210,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -111,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -121,7 +230,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -131,7 +240,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -141,7 +250,27 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="flip-up">
+        <div class="year">1999</div>
+        <div class="content">
+          <img src="https://picsum.photos/500" alt="Avatar" class="image">
+          <div class="text">
+            <h2>HEADING</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
+        <div class="year">1999</div>
+        <div class="content">
+          <img src="https://picsum.photos/500" alt="Avatar" class="image">
+          <div class="text">
+            <h2>HEADING</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="flip-up">
         <div class="year">1999</div>
         <div class="content">
           <img src="https://picsum.photos/500" alt="Avatar" class="image">
@@ -164,6 +293,13 @@
     </footer>
 
     <script src="script_new.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      }  else  {
+        AOS.init();
+      }
+    </script>
 
   </body>
 </html>
