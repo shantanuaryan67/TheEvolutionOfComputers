@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.9.0/css/pro.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Exo:600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="screen and (min-width: 768px)">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="screen and (min-width: 768px)"> -->
 
     <!-- <base href="/TheEvolutionOfComputers/"> -->
 
     <title>Computers, EVOLVE !!</title>
 
   </head>
-  <body>
+  <body onload="AOS.init();">
 
     <header><h1>The Evolution of Computers</h1></header>
 
@@ -293,10 +293,20 @@
     </footer>
 
     <script src="script_new.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      }  else  {
+      if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) && (window.innerWidth >= 600)) {
+        var head = document.getElementsByTagName('head')[0];
+
+        var s1 = document.createElement("script");
+        s1.type = "text/javascript";
+        s1.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
+        head.appendChild(s1);
+
+        var s2 = document.createElement("link");
+        s2.rel = "stylesheet";
+        s2.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
+        head.appendChild(s2);
+
         AOS.init();
       }
     </script>
