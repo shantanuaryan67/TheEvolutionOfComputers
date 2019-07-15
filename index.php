@@ -28,16 +28,20 @@
     <header><h1>The Evolution of Computers</h1></header>
 
     <section class="timeline">
-      <div class="container" data-aos="flip-up">
-        <div class="year">1999</div>
-        <div class="content">
-          <img src="https://picsum.photos/500" alt="Avatar" class="image">
-          <div class="text">
-            <h2>HEADING<a href="#"><i class="far fa-external-link"></i></a></h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-          </div>
-        </div>
-      </div>
+      <?php
+        for ($i=0; $i < 10; $i++) {
+          echo '<div class="container" data-aos="flip-up">
+                  <div class="year">'.$i.'</div>
+                  <div class="content">
+                    <img src="'.$i.'" alt="'.$i.'" class="image">
+                    <div class="text">
+                      <h2 class="title">'.$i.'<a href="https://en.wikipedia.org/wiki/'.$i.'"><i class="far fa-external-link"></i></a></h2>
+                      <p class="info">'.$i.'</p>
+                    </div>
+                  </div>
+                </div>';
+        }
+      ?>
     </section>
 
     <footer>
