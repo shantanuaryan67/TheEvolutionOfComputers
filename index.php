@@ -29,18 +29,50 @@
 
     <section class="timeline">
       <?php
-        for ($i=0; $i < 10; $i++) {
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "csv_db";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM tbl_name";
+        $result = $conn->query($sql);
+
+        while($row = $result->fetch_assoc()) {
           echo '<div class="container" data-aos="flip-up">
-                  <div class="year">'.$i.'</div>
+                  <div class="year">'.$row["year"].'</div>
                   <div class="content">
-                    <img src="'.$i.'" alt="'.$i.'" class="image">
+                    <img src="'.$row["src"].'" alt="'.$row["title"].'" class="image">
                     <div class="text">
-                      <h2 class="title">'.$i.'<a href="https://en.wikipedia.org/wiki/'.$i.'"><i class="far fa-external-link"></i></a></h2>
-                      <p class="info">'.$i.'</p>
+                      <h2 class="title">'.$row["title"].'<a href="https://en.wikipedia.org/wiki/'.$row["title"].'"><i class="far fa-external-link"></i></a></h2>
+                      <p class="info">'.$row["info"].'</p>
                     </div>
                   </div>
                 </div>';
         }
+
+
+        $conn->close();
+
+        // for ($i=0; $i < 10; $i++) {
+        //   echo '<div class="container" data-aos="flip-up">
+        //           <div class="year">'.$i.'</div>
+        //           <div class="content">
+        //             <img src="'.$i.'" alt="'.$i.'" class="image">
+        //             <div class="text">
+        //               <h2 class="title">'.$i.'<a href="https://en.wikipedia.org/wiki/'.$i.'"><i class="far fa-external-link"></i></a></h2>
+        //               <p class="info">'.$i.'</p>
+        //             </div>
+        //           </div>
+        //         </div>';
+        // }
       ?>
     </section>
 
