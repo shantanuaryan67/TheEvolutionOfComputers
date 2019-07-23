@@ -23,11 +23,12 @@
     <title>Computers, EVOLVE !!</title>
 
   </head>
-  <body onload="AOS.init();">
+  <body onload="loaded();">
 
-    <header><h1>The Evolution of Computers</h1></header>
+    <header><h1>The Evolution of Computers<div class="lds-dual-ring"></div></h1></header>
 
     <section class="timeline">
+
       <?php
 
         $servername = "localhost";
@@ -48,11 +49,11 @@
         while($row = $result->fetch_assoc()) {
           echo '<div class="container" data-aos="flip-up">
                   <div class="year">'.$row["year"].'</div>
-                  <div class="content">
-                    <img src="'.$row["src"].'" alt="'.$row["title"].'" class="image">
-                    <div class="text">
-                      <h2 class="title">'.$row["title"].'<a href="https://en.wikipedia.org/wiki/'.$row["title"].'"><i class="far fa-external-link"></i></a></h2>
-                      <p class="info">'.$row["info"].'</p>
+                  <div class="content card">
+                    <img src="'.$row["src"].'" alt="'.$row["title"].'" class="image card--bgimg">
+                    <div class="text card--text">
+                      <h2 class="title card--title">'.$row["title"].'<a target="_blank" href="https://en.wikipedia.org/wiki/'.$row["title"].'"><i class="far fa-external-link"></i></a></h2>
+                      <p class="info card--desc">'.$row["info"].'</p>
                     </div>
                   </div>
                 </div>';
@@ -73,7 +74,9 @@
         //           </div>
         //         </div>';
         // }
+
       ?>
+
     </section>
 
     <footer>
@@ -87,7 +90,7 @@
     </footer>
 
     <script src="script_new.js"></script>
-    <script>
+    <!-- <script>
        // && (window.innerWidth >= 600)
       if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
         var head = document.getElementsByTagName('head')[0];
@@ -104,7 +107,7 @@
 
         AOS.init();
       }
-    </script>
+    </script> -->
 
   </body>
 </html>
